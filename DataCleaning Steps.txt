@@ -1,0 +1,23 @@
+1. Since the datasets contains less rows so decided to use Excel for Data Cleaning.
+2. After the Dataset is opened in Excel, I deleted the 1st row as its not required and made 2nd row as Header. We can select Delete Header.
+3. I have selected the complete dataset and maked filer to it.
+4. Checked all the filter column clicking dowpdown button. Unchecked the button if contains "Blank"/" "/"NA"/"None" etc.
+5.created a New Column Called "month" and used formula "=text(transaction_date,"mmmm"). It will give me the full name of the month from date column separately. drage the same formula for all the cells in that column.
+6.Then i calculated profit by (list price-standard Price).
+7.In Sheet Customer Demographic,
+	a) I did the same process of deleting the Blanks in each and every sheets.
+	b) I have unchecked the "Y" in deceased Indicator as i have considered only the customers who are alive.
+	c) I have deleted the Default column as its not understandable
+	d) I have decided to Place the genders in 3 categories like "F", "M" and "U" only. 
+ 		F= Female
+		M= Male
+		U= Unidentified
+8. In Sheet Customer Address, i have deleted the Blanks and the tried to bring the State name in the unique abbrevation as below
+		NSW= New South
+		VIC= Victoria
+9. I have fetched the Age of the customer from the DOB given by Using Formula (=INT((TODAY()-F2)/365)).
+10. I have calculated the Profit by (List Price- Standard Cost)
+11. I Fetched out the Month using (=TEXT(D2,"mmmm")
+10. I have deleted the unnecessary columns and also rows with blanks cells
+11. I have uploaded the excel sheet into tableau and created the relationship with similar columns.
+12. I created a bar graph with gender and avg profit.
